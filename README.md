@@ -25,14 +25,6 @@ Using SQL queries, the data was transformed into a clean and analysis-ready form
   <li>Drop unused columns</li>
 </ul>
 
-<h2>🛠️ Tools Used</h2>
-
-<ul>
-  <li>SQL</li>
-  <li>DBeaver</li>
-  <li>GitHub</li>
-</ul>
-
 <h2>📂 Data Cleaning Process</h2>
 
 <h3>1️⃣ Standardized Date Format</h3>
