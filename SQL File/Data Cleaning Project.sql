@@ -1,3 +1,4 @@
+
 -- Cleaning Data in SQL
 
 Select * 
@@ -10,6 +11,7 @@ from nashville_housing;
 
 update nashville_housing
 set SaleDate = Convert(SaleDate,Date); -- Doesn't Work Use the query Below Instead
+
 
 alter table nashville_housing 
 add SaleDateNew Date;
@@ -55,6 +57,7 @@ select Substring(PropertyAddress,1,locate(',',PropertyAddress)-1) as Address,
        Substring(PropertyAddress,locate(',',PropertyAddress)+1,length(PropertyAddress)) as City
 from nashville_housing nh;
 
+# Addition
 alter table nashville_housing 
 add PropertySplitAddress Char(55);
 update nashville_housing
@@ -76,7 +79,8 @@ substring_index(replace(OwnerAddress,',','.'),'.',1),
 substring_index(substring_index(replace(OwnerAddress,',','.'),'.',2),'.',-1),
 substring_index(replace(OwnerAddress,',','.'),'.',-1)
 from nashville_housing nh ;
- 
+
+# Additions 
 alter table nashville_housing 
 add OwnerSplitAddress Char(55);
 update nashville_housing
@@ -119,7 +123,7 @@ order by 2;
 
 -- Remove Duplicates
 
-# to view Duplicates
+# To View Duplicates
 with RowNumCTE as (
 select *, Row_number() over(
 		  partition by ParcelID,
