@@ -79,16 +79,4 @@ Using SQL queries, the data was transformed into a clean and analysis-ready form
   <li>Useful for dashboards and reports</li>
 </ul>
 
-<h2>🚀 Why This Project Matters</h2>
 
-<p>
-Data cleaning is one of the most important steps in analytics.  
-This project demonstrates practical SQL skills used by Data Analysts and Data Scientists.
-</p>
-
-<h2>👨‍💻 Author</h2>
-
-<p>
-<b>Shaurya Sinha</b><br>
-Aspiring Data Analyst | Learning SQL, Python & Data Science
-</p>
